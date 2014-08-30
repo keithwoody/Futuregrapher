@@ -3627,7 +3627,7 @@ define('futuregrapher/graphvis',['require','futuregrapher/defaultgraphvisoptions
             var fontSize = label.fontSize || 14;
             var color = label.color || nodeCircleColor;
             var borderColor = label.borderColor || nodeCircleBorderColor;
-            var opacity = _.isUndefined(label.opacity) ? nodeCircleOpacity : description.opacity;
+            var opacity = _.isUndefined(label.opacity) ? nodeCircleOpacity : label.opacity;
             var hoverText = label.hoverText || null;
             
             var eventHandlers = {};
